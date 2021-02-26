@@ -7,7 +7,7 @@
 """
 
 
-def correct_type(link, typ):  # Нужного ли типа файл?  - встроенный модуль
+def correct_type(link: str, typ: str) -> bool or None:  # Нужного ли типа файл?  - встроенный модуль
     link = link.lower()  # .png equal .PNG
     typ = typ.lower()  # .png equal .PNG
     n = len(typ)  # -n -это нулевой єлемен массива.
