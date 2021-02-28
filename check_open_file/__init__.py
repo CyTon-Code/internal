@@ -10,7 +10,7 @@ if __name__ == "__main__":  # If not imported, I exit is the module:
     exit()  # Answer: I'm leaving, I'm a module.
 
 
-def check_file(link: str) -> bool or Exception:  # Check if the file exists:
+def check_open_file(link: str) -> bool or Exception:  # Check if the file exists:
     """
         This module is required to read a file (or module).
         It can also check if a file (or module) exists.
