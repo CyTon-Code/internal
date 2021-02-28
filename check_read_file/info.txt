@@ -1,0 +1,39 @@
+This function is designed to check the existence of a file and answers the
+question: "The file does not exist ??".
+
+
+The function can also answer the questions: "Will the file be closed?" and
+"Can't read the file?".
+
+
+If you need to know the answer to the question:
+  "The file does not exist?" - You can substitute the result of
+"check_read_file(link)" into the "bool()" function. "False" and "None" - No,
+"True" - Yes. "bool(check_read_file(link))".
+  "The file is unreadable, is it?" - The answer will be in the return type.
+NoneType - Yes, bool - No. "type(check_read_file(link)) == None".
+  "Will the file be closed?" - use the functionality: "try", "except".
+
+
+The function can understand and return 4 events:
+  The file is missing. "True".
+  The file exists and is being read. "False".
+  File exists but cannot be read. "None".
+  The file is not closed (exception - FileDidNotClose).
+
+
+In addition to 3 events (from "return"), there is 1 more Exception
+(FileDidNotClose - from "raise") - says that the file is not closed.
+
+
+Arsenal: 2 bool values. 1 NoneType and 1 Exception.
+
+
+Events:
+  File exists: "None" - the file was not read. "False" - the file has been read.
+  File does not exist: "True".
+  The file is not closed: "FileDidNotClose".
+
+
+If you do not need some functionality, you have the right to remove it (if you
+understand what you are doing).
