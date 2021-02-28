@@ -3,7 +3,7 @@
     Via os.system or return (RUN) - doesn't work.
 """
 
-from plugin import file_close
+from internal.plugins import file_close
 
 if __name__ == "__main__":  # If not imported, I exit is the module:
     print("I am is Module!!! Bye Bye!!!")
@@ -34,4 +34,3 @@ def check_file(link: str) -> bool or Exception:  # Check if the file exists:
     finally:
         if file_open:  # If the file open:
             file_close(f, "Я пытался открывать файл.")
-
