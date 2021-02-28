@@ -1,0 +1,33 @@
+This function is designed to check for the existence of a file. Answers the
+question: "The file does not exist ??".
+
+
+The function can also answer the questions: "Will the file be closed?"
+
+
+If you need to know the answer to the question:
+  "The file does not exist?" - "False" - No, "True" - Yes.
+  "Will the file be closed?" - use the functionality: "try", "except".
+
+
+The function can understand and return 3 events:
+  The file is missing. "True".
+  The file exists. "False".
+  The file is not closed (exception - "FileDidNotClose").
+
+
+In addition to 2 events (from "return"), there is 1 more Exception
+(FileDidNotClose - from "raise") - says that the file is not being closed.
+
+
+Arsenal: 2 bool values and 1 exception.
+
+
+Events:
+   File exists: "False".
+   File does not exist: "True".
+   The file is not closed: "FileDidNotClose".
+
+
+If you do not need some functionality, you have the right to remove it (if you
+understand what you are doing).
