@@ -12,7 +12,7 @@ if __name__ == "__main__":  # If not imported, I exit is the module:
     exit()  # Answer: I'm leaving, I'm a module.
 
 
-def moving_a_file(link: str, path="work/moving_a_file.py"):
+def move_file(link: str, path="work/moving_a_file.py"):
     # If the names are the same, but the addresses are different, you can move:
     if link == path or not get_name_from_link(link) == get_name_from_link(path):
         return True
